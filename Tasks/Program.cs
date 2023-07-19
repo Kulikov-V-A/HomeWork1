@@ -52,7 +52,7 @@ Console.WriteLine(max);
 // -3 -> нет
 // 7 -> нет
 
-
+/*
 Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2 == 0)
@@ -62,4 +62,27 @@ if (number % 2 == 0)
 else
 {
     Console.WriteLine("нет");
+}
+*/
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+
+Console.Write("Введите целое число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int start = 2;
+while (start < N-1)
+{
+    Console.Write(start+", ");
+    start += 2;
+}
+if ((N-1) % 2 == 0)
+{
+    Console.Write(N-1);
+}
+if (N % 2 == 0)
+{
+    Console.Write(N);
 }
